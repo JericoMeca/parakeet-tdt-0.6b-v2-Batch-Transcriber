@@ -10,6 +10,7 @@ The script is heavily optimized for handling very long audio files (e.g., podcas
 -   **High-Quality Segmentation**: Uses a sophisticated strategy that prioritizes the model's native segment splits, then uses precise word-level timestamps to intelligently divide long lines based on punctuation (sentences, clauses) for optimal readability.
 -   **Very Long Audio Handling**: For audio files exceeding 60 minutes, the tool automatically pre-processes and splits the file at silent intervals before transcription, seamlessly merging the results afterward. This allows for the transcription of multi-hour audio files without memory issues.
 -   **CUDA Acceleration**: Fully utilizes NVIDIA GPUs for significantly faster processing speeds.
+-   **Duplicate Removal**: Automatically detects and removes redundant subtitle segments where both the text and timestamps are identical, cleaning up common ASR model artifacts and improving the final output quality.
 -   **Wide Format Support**: Handles a large variety of common audio and video formats thanks to its FFmpeg backend (e.g., `.mp3`, `.wav`, `.m4a`, `.mp4`, `.mkv`, `.mov`).
 -   **Customizable**: Easily adjust subtitle parameters like maximum segment duration and word count to fit your specific needs.
 -   **Smart & Resilient**: Skips already processed files, retries with robust methods, and provides detailed logging.
