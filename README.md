@@ -1,6 +1,6 @@
 # parakeet-tdt-0.6b-v2-Batch-Transcriber
 
-Parakeet Batch Transcriber is a powerful command-line tool designed for efficient and high-quality audio transcription. It leverages NVIDIA NeMo's `Parakeet-TDT-0.6B-v2` model to generate accurate, word-level timestamped transcriptions and formats them into perfectly segmented SRT subtitle files.
+Parakeet Batch Transcriber is a powerful command-line tool designed for efficient and high-quality audio transcription. It leverages nvidia/parakeet-tdt-0.6b-v2 model to generate accurate, word-level timestamped transcriptions and formats them into perfectly segmented SRT subtitle files.
 
 The script is heavily optimized for handling very long audio files (e.g., podcasts, lectures, meetings) by intelligently pre-splitting audio at silent points to prevent memory overflows and ensure reliability.
 
