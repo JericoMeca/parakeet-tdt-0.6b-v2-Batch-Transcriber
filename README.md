@@ -136,6 +136,9 @@ This tool is designed to create the most natural and readable subtitles possible
 4.  **Fallback**: If no punctuation is available for splitting, it falls back to a simple word count to ensure the duration constraints are met.
 5.  **Pre-computation Splitting**: For extremely long audio files (\>60 minutes), the script first analyzes the entire file to find long periods of silence. It splits the audio into large, manageable chunks at these silent points, transcribes each chunk individually, and then intelligently merges the final results with adjusted timestamps.
 
+## Program screenshots
+![pic](./pic.png)
+
 ## License
 
 This project is licensed under the **MIT License**.
